@@ -8,7 +8,7 @@
             "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/zig-cache/bin/zig-container",
+            "program": "${workspaceRoot}/zig-out/bin/zig-container",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

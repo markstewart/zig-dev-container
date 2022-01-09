@@ -10,8 +10,13 @@
 	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
 
 	// Set *default* container specific settings.json values on container create.
-	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash",
+	"settings": {
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "/bin/bash"
+			}
+		},
+		"terminal.integrated.defaultProfile.linux": "bash",
 		"zig.zigPath": "/usr/local/bin/zig",
 		"zigLanguageClient.path": "/usr/local/bin/zls",
 		"debug.allowBreakpointsEverywhere": true,
